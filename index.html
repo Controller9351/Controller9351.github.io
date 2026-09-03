@@ -1,2 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
 
-<h1> hello everyone </h1>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Venkateswarlu Kambhampati | Data Scientist & Developer</title>
+  <meta name="description"
+    content="Portfolio of Venkateswarlu Kambhampati – Data Scientist, ML Engineer & Software Developer. Explore projects in AI, deep learning, and software engineering." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-trail" id="cursorTrail"></div>
+
+  <!-- Floating Background Orbs -->
+  <div class="bg-orbs" aria-hidden="true">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+    <div class="orb orb-4"></div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-brand">
+      <span class="nav-brand-dot"></span>
+      <span>Venkateswarlu</span>
+    </div>
+    <ul class="nav-links" id="navLinks" role="list">
+      <li><a href="#home" class="nav-link active" id="nav-home">Home</a></li>
+      <li><a href="#skills" class="nav-link" id="nav-skills">Skills</a></li>
+      <li><a href="#projects" class="nav-link" id="nav-projects">Projects</a></li>
+      <li><a href="#education" class="nav-link" id="nav-education">Education</a></li>
+      <li><a href="#certificates" class="nav-link" id="nav-certificates">Certificates</a></li>
+      <li><a href="#contact" class="nav-link" id="nav-contact">Contact</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ========================= HERO SECTION ========================= -->
+  <section class="hero" id="home" aria-labelledby="hero-name">
+    <div class="hero-content">
+      <div class="hero-identity">
+        <div class="profile-wrapper">
+          <div class="profile-ring"></div>
+          <img src="profile.jpeg" alt="Venkateswarlu Kambhampati – Portfolio Photo" class="profile-img" id="profileImg" />
+          <div class="profile-glow"></div>
+        </div>
+        <div class="hero-text">
+          <p class="hero-greeting">Hello, I'm</p>
+          <h1 class="hero-name" id="hero-name">Venkateswarlu Kambhampati</h1>
+          <p class="hero-tagline">
+            I build things, break them, learn from them &mdash; and show up ready to contribute from day one.
+          </p>
+          <div class="hero-cta">
+            <a href="#projects" class="btn btn-primary" id="btn-see-work">View Projects</a>
+            <a href="#contact" class="btn btn-ghost" id="btn-contact">Contact Me</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator" aria-hidden="true">
+      <div class="scroll-dot"></div>
+    </div>
+  </section>
+
+  <!-- ========================= SKILLS SECTION ========================= -->
+  <section class="section skills-section" id="skills" aria-labelledby="skills-heading">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">What I Know</span>
+        <h2 class="section-title" id="skills-heading">Skills & Technologies</h2>
+        <p class="section-sub">A curated toolkit spanning systems programming, ML, data engineering, and beyond.</p>
+      </div>
+      <div class="skills-grid" role="list">
+        <div class="skill-card" id="skill-c" role="listitem" tabindex="0">
+          <div class="skill-icon">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C" loading="lazy" />
+          </div>
+          <span class="skill-name">C</span>
+          <div class="skill-glow-overlay"></div>
+        </div>
+        <div class="skill-card" id="skill-cpp" role="listitem" tabindex="0">
+          <div class="skill-icon">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++"
+              loading="lazy" />
+          </div>
+          <span class="skill-name">C++</span>
+          <div class="skill-glow-overlay"></div>
+        </div>
+        <div class="skill-card" id="skill-python" role="listitem" tabindex="0">
+          <div class="skill-icon">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python"
+              loading="lazy" />
+          </div>
+          <span class="skill-name">Python</span>
+          <div class="skill-glow-overlay"></div>
+        </div>
+        <div class="skill-card" id="skill-mysql" role="listitem" tabindex="0">
+          <div class="skill-icon">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL"
+              loading="lazy" />
+          </div>
+          <span class="skill-name">MySQL</span>
+          <div class="skill-glow-overlay"></div>
+        </div>
+        <div class="skill-card" id="skill-ml" role="listitem" tabindex="0">
+          <div class="skill-icon">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg"
+              alt="Machine Learning" loading="lazy" />
+          </div>
+          <span class="skill-name">Machine Learning</span>
+          <div class="skill-glow-overlay"></div>
+        </div>
+        <div class="skill-card" id="skill-da" role="listitem" tabindex="0">
+          <div class="skill-icon">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" alt="Data Analysis"
+              loading="lazy" />
+          </div>
+          <span class="skill-name">Data Analysis</span>
+          <div class="skill-glow-overlay"></div>
+        </div>
+        <div class="skill-card" id="skill-git" role="listitem" tabindex="0">
+          <div class="skill-icon">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git"
+              loading="lazy" />
+          </div>
+          <span class="skill-name">Git</span>
+          <div class="skill-glow-overlay"></div>
+        </div>
+        <div class="skill-card" id="skill-github" role="listitem" tabindex="0">
+          <div class="skill-icon skill-icon-invert">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub"
+              loading="lazy" />
+          </div>
+          <span class="skill-name">GitHub</span>
+          <div class="skill-glow-overlay"></div>
+        </div>
+        <div class="skill-card" id="skill-databricks" role="listitem" tabindex="0">
+          <div class="skill-icon">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/63/Databricks_Logo.png" alt="Databricks"
+              loading="lazy" style="object-fit:contain;" />
+          </div>
+          <span class="skill-name">Databricks</span>
+          <div class="skill-glow-overlay"></div>
+        </div>
+        <div class="skill-card" id="skill-html" role="listitem" tabindex="0">
+          <div class="skill-icon">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5"
+              loading="lazy" />
+          </div>
+          <span class="skill-name">HTML</span>
+          <div class="skill-glow-overlay"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================= PROJECTS SECTION ========================= -->
+  <section class="section projects-section" id="projects" aria-labelledby="projects-heading">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title" id="projects-heading">Featured Projects</h2>
+        <p class="section-sub">Deep dives into real-world problems solved with data, models, and code.</p>
+      </div>
+
+      <!-- Project 1: RSNA -->
+      <article class="project-card" id="project-rsna" aria-labelledby="proj1-title">
+        <div class="project-number" aria-hidden="true">01</div>
+        <div class="project-content">
+          <div class="project-header">
+            <div class="project-tags" aria-label="Technologies used">
+              <span class="tag">Deep Learning</span>
+              <span class="tag">CNN</span>
+              <span class="tag">Medical AI</span>
+              <span class="tag">Computer Vision</span>
+            </div>
+            <div class="project-metric" aria-label="Mean Absolute Error">
+              <span class="metric-value">10.4</span>
+              <span class="metric-unit">months MAE</span>
+            </div>
+          </div>
+          <h3 class="project-title" id="proj1-title">RSNA Bone Age Prediction</h3>
+          <p class="project-desc">
+            The RSNA Pediatric Bone Age Challenge involves predicting a child's skeletal maturity from hand X-ray images
+            — a task traditionally done by radiologists who compare X-rays against atlas references. This project builds
+            an end-to-end deep learning pipeline to automate that process with clinical-grade accuracy, achieving a Mean
+            Absolute Error of just <strong>10.4 months</strong>.
+          </p>
+          <div class="project-highlights">
+            <div class="highlight-item">
+              <div class="hi-dot"></div>
+              <div>
+                <strong>CNN Architecture</strong>
+                <p>Built a custom Convolutional Neural Network with residual skip connections. Convolutional layers
+                  extract spatial features — bone density, epiphyseal plate width, and ossification patterns —
+                  progressively from low-level edges to high-level skeletal landmarks across the hand radiograph.</p>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <div class="hi-dot"></div>
+              <div>
+                <strong>Data Augmentation</strong>
+                <p>Applied random horizontal flipping, rotation (±15°), zoom (up to 20%), brightness/contrast jitter,
+                  and Gaussian noise injection to artificially expand the training distribution. This made the model
+                  robust to real-world variations in X-ray positioning, exposure, and equipment calibration.</p>
+              </div>
+            </div>
+
+            <div class="highlight-item">
+              <div class="hi-dot"></div>
+              <div>
+                <strong>Result — 10.4-Month MAE</strong>
+                <p>Achieved a Mean Absolute Error of 10.4 months on the RSNA test set, which is within the range of
+                  inter-radiologist agreement (~10–12 months) and demonstrates that the model can reliably support
+                  clinical bone-age assessment without expert supervision.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 2: XAI -->
+      <article class="project-card project-alt" id="project-xai" aria-labelledby="proj2-title">
+        <div class="project-number" aria-hidden="true">02</div>
+        <div class="project-content">
+          <div class="project-header">
+            <div class="project-tags" aria-label="Technologies used">
+              <span class="tag tag-purple">XAI</span>
+              <span class="tag tag-purple">Grad-CAM</span>
+              <span class="tag tag-purple">Score-CAM</span>
+              <span class="tag tag-purple">Interpretability</span>
+            </div>
+          </div>
+          <h3 class="project-title" id="proj2-title">Explainable AI (XAI) in Image Processing</h3>
+          <p class="project-desc">
+            A natural extension of the RSNA bone age project addressing a critical problem in medical AI: <em>black-box
+              decision-making</em>. Clinicians cannot trust a model they cannot understand. This project applies four
+            state-of-the-art XAI techniques to generate visual saliency maps that reveal exactly which regions of the
+            X-ray the CNN is using to predict bone age — turning an opaque neural network into an auditable,
+            interpretable tool.
+          </p>
+          <div class="project-highlights">
+            <div class="highlight-item">
+              <div class="hi-dot hi-dot-pink"></div>
+              <div>
+                <strong>Grad-CAM (Gradient-weighted Class Activation Mapping)</strong>
+                <p>Computes the gradient of the prediction score with respect to the final convolutional feature maps.
+                  Regions with large positive gradients are highlighted as heat maps overlaid on the X-ray, showing
+                  which bone structures most influenced the predicted age. Efficient and widely adopted in medical
+                  imaging research.</p>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <div class="hi-dot hi-dot-pink"></div>
+              <div>
+                <strong>Grad-CAM++ (Higher-Order Gradients)</strong>
+                <p>An enhancement over Grad-CAM that uses second-order gradient weighting to better capture multiple
+                  discriminative regions in a single image — critical when several growth plates simultaneously
+                  contribute to the age estimate. Produces sharper, more spatially precise activation maps.</p>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <div class="hi-dot hi-dot-pink"></div>
+              <div>
+                <strong>Score-CAM (Gradient-Free Explanation)</strong>
+                <p>Removes the dependency on gradients entirely. Instead, it forward-passes masked versions of the image
+                  through the network and weights activation maps by how much each activation channel increases the
+                  prediction confidence. Results in more stable and faithful visual explanations, especially in noisy
+                  X-ray environments.</p>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <div class="hi-dot hi-dot-pink"></div>
+              <div>
+                <strong>Integrated Gradients (Pixel Attribution)</strong>
+                <p>Computes attributions by integrating gradients along a straight path from a baseline (black image) to
+                  the actual input. Unlike CAM-based methods, this produces pixel-level importance scores that satisfy
+                  the completeness axiom — ensuring attributions sum to the model's output difference, giving a rigorous
+                  mathematical guarantee of faithfulness.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 3: Games -->
+      <article class="project-card" id="project-games" aria-labelledby="proj3-title">
+        <div class="project-number" aria-hidden="true">03</div>
+        <div class="project-content">
+          <div class="project-header">
+            <div class="project-tags" aria-label="Technologies used">
+              <span class="tag tag-green">Python</span>
+              <span class="tag tag-green">OOP</span>
+              <span class="tag tag-green">Turtle</span>
+              <span class="tag tag-green">Game Dev</span>
+            </div>
+          </div>
+          <h3 class="project-title" id="proj3-title">Ping Pong & Snake Games</h3>
+          <p class="project-desc">
+            Classic arcade games brought to life using pure Python with zero external game engines —
+            a showcase of object-oriented design and the Python standard library.
+          </p>
+          <div class="project-highlights">
+            <div class="highlight-item">
+              <div class="hi-dot hi-dot-green"></div>
+              <div>
+                <strong>Pure Python with the Turtle Package</strong>
+                <p>Both games are built exclusively using Python's standard library <code>turtle</code> module — no
+                  Pygame, no external frameworks. The turtle module provides a canvas, event loop, and drawing
+                  primitives, requiring careful management of timing and frame updates to create smooth game-play
+                  without a dedicated game engine.</p>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <div class="hi-dot hi-dot-green"></div>
+              <div>
+                <strong>Object-Oriented Programming Design</strong>
+                <p>Every game entity is a self-contained class. In Ping Pong: <code>Paddle</code>, <code>Ball</code>,
+                  and <code>Scoreboard</code> classes. In Snake: <code>Snake</code>, <code>Food</code>, and
+                  <code>Scoreboard</code> classes. Each class encapsulates its own state and behavior, allowing clean
+                  separation of concerns and easy extension of game logic.</p>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <div class="hi-dot hi-dot-green"></div>
+              <div>
+                <strong>Ping Pong — Collision &amp; Physics</strong>
+                <p>Implements two-player keyboard controls using turtle's <code>onkey</code> event binding. Real-time
+                  ball-to-paddle collision detection uses bounding-box intersection checks. The ball velocity vector
+                  reflects off paddles and walls, and a scoreboard updates dynamically when a player misses. The main
+                  loop uses <code>screen.update()</code> and <code>time.sleep()</code> for frame control.</p>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <div class="hi-dot hi-dot-green"></div>
+              <div>
+                <strong>Snake Game — Growth &amp; Difficulty</strong>
+                <p>The snake body is managed as a list of turtle segments; on eating food, a new segment is appended and
+                  each segment follows the position of the one ahead. Boundary and self-collision are detected via
+                  coordinate distance checks. Progressive difficulty is achieved by incrementally reducing the sleep
+                  delay between frames as the score increases, making the snake faster with time.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ========================= EDUCATION SECTION ========================= -->
+  <section class="section education-section" id="education" aria-labelledby="education-heading">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Academic Journey</span>
+        <h2 class="section-title" id="education-heading">Education</h2>
+        <p class="section-sub">Building a strong academic foundation in computer science and data science.</p>
+      </div>
+      <div class="edu-timeline">
+        <div class="edu-card" id="edu-degree" role="article" aria-labelledby="edu-title">
+          <div class="edu-badge" aria-hidden="true">🎓</div>
+          <div class="edu-body">
+            <div class="edu-meta">
+              <span class="edu-year">2023 – 2028</span>
+              <span class="edu-type">Dual Degree</span>
+            </div>
+            <h3 class="edu-title" id="edu-title">B.Tech + M.Tech in Computer Science & Engineering</h3>
+            <p class="edu-college">Indian Institute of Information Technology Design and Manufacturing Kancheepuram</p>
+            <div class="edu-details">
+              <div class="edu-detail-item">
+                <span class="detail-label">CGPA</span>
+                <span class="detail-value cgpa-plain">7.66 / 10.0</span>
+              </div>
+              <div class="edu-detail-item">
+                <span class="detail-label">Program</span>
+                <span class="detail-value">5-Year Integrated Dual Degree</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================= CERTIFICATES SECTION ========================= -->
+  <section class="section certificates-section" id="certificates" aria-labelledby="cert-heading">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Credentials</span>
+        <h2 class="section-title" id="cert-heading">Certificates</h2>
+        <p class="section-sub">View my verified certificates and credentials hosted on GitHub.</p>
+      </div>
+      <div class="cert-cta-wrap">
+        <a
+          href="https://github.com/Controller9351/Certificates"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="cert-link-card"
+          id="cert-github-link"
+        >
+          <div class="cert-link-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+          </div>
+          <div class="cert-link-text">
+            <span class="cert-link-title">View All Certificates</span>
+            <span class="cert-link-sub">github.com/Controller9351/Certificates</span>
+          </div>
+          <div class="cert-link-arrow" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section contact-section" id="contact" aria-labelledby="contact-heading">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Contact</span>
+        <h2 class="section-title" id="contact-heading">Get In Touch</h2>
+        <p class="section-sub">Feel free to reach out through any of the channels below.</p>
+      </div>
+      <div class="contact-info contact-info-centered" aria-label="Contact information">
+          <div class="contact-item" id="contact-email">
+            <div class="contact-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <rect x="2" y="4" width="20" height="16" rx="2" />
+                <polyline points="2,4 12,13 22,4" />
+              </svg>
+            </div>
+            <div>
+              <span class="contact-label">Email</span>
+              <a href="mailto:kambhampativenkateswarlu3@gmail.com" class="contact-value">kambhampativenkateswarlu3@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-item" id="contact-github">
+            <div class="contact-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" />
+              </svg>
+            </div>
+            <div>
+              <span class="contact-label">GitHub</span>
+              <a href="https://github.com/Controller9351" target="_blank" rel="noopener noreferrer"
+                class="contact-value">github.com/Controller9351</a>
+            </div>
+          </div>
+          <div class="contact-item" id="contact-linkedin">
+            <div class="contact-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z" />
+                <circle cx="4" cy="4" r="2" />
+              </svg>
+            </div>
+            <div>
+              <span class="contact-label">LinkedIn</span>
+              <a href="https://www.linkedin.com/in/venkateswarlu-kambhampati-9a9861336/" target="_blank" rel="noopener noreferrer"
+                class="contact-value">linkedin.com/in/venkateswarlu-kambhampati</a>
+            </div>
+          </div>
+          <div class="contact-item" id="contact-location">
+            <div class="contact-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+                <circle cx="12" cy="10" r="3" />
+              </svg>
+            </div>
+            <div>
+              <span class="contact-label">Location</span>
+              <span class="contact-value">India 🇮🇳</span>
+            </div>
+          </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="container footer-inner">
+      <p class="footer-copy">
+        &copy; <span id="footer-year"></span> <strong>Venkateswarlu Kambhampati</strong>. All rights reserved.
+      </p>
+      <div class="footer-links">
+        <a href="#home" class="footer-link" id="footer-home">Back to Top ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
